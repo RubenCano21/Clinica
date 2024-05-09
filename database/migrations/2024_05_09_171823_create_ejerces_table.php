@@ -16,8 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger("Ci_Odontologo");
 
             $table->primary(["Id_Especialidad","Ci_Odontologo"]);
-            $table->foreign("Id_Especialidad")->references("id")->on("Especialidad");
-            $table->foreign("Ci_Odontologo")->references("Ci")->on("Odontologo");
+            $table->foreign("Id_Especialidad")->references("id")->on("especialidads")->onDelete("cascade")->onUpdate("cascade");
+            $table->foreign("Ci_Odontologo")->references("CI")->on("odontologos")->onDelete("cascade")->onUpdate("cascade");
             $table->timestamps();
         });
     }

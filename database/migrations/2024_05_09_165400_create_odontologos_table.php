@@ -21,7 +21,8 @@ return new class extends Migration
             $table->string("matriculaProf");
             
             $table->unsignedBigInteger("Id_Usuario");
-            $table->foreign("Id_Usuario")->references("id")->on("Usuario");
+            $table->foreign("Id_Usuario")->references("id")->on("usuarios")->onDelete("cascade")->onUpdate("cascade");
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date("fechaSalida");
             
             $table->unsignedBigInteger("Id_Usuario");
-            $table->foreign("Id_Usuario")->references("id")->on("Usuario");
+            $table->foreign("Id_Usuario")->references("id")->on("usuarios")->onDelete("cascade")->onUpdate("cascade");
             $table->timestamps();
         });
     }
