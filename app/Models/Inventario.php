@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Inventario extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        "nombre",
+        "cantidad",
+        "fechaEntrada",
+        "fechaSalida",
+        "id_Usuario",
+    ];
 }
