@@ -42,6 +42,7 @@ body {
 .inp {
     padding-bottom: 10px;
     border-bottom: 2px solid #eee;
+    font-color: opacity 50%;
 }
 
 .input {
