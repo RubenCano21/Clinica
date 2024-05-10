@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="cl-icon/css/all.min.css">
     </head>
     <body>
+        <a href="index.blade.php">Home</a>
         <div class="wrapper">
             <form action="{{route('r.usuario')}}" method="post" class="form">
                 <h1 class="title">Inicio</h1>

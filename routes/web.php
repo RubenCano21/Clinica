@@ -10,4 +10,4 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/login', [Login::class,'login']);
-Route::post('/usuario', [Login::class,'home'])->name('r.usuario');
+Route::post('/usuario', [Login::class,'index'])->name('r.usuario');

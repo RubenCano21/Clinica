@@ -61,7 +61,7 @@ body {
 
 .links h4 {
     color: #222;
-    font.weight: 500;
+    font-weight: 500;
     display: none;
     margin-bottom: 10px;
 }

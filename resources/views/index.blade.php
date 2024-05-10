@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/public/estilo.css">
     </head>
     <body>
+        <a href="login.blade.php" >Inicio</a>
         <aside class="sidebar">
             <div class="logo">
                 <h2>Clinica Dental</h2>
