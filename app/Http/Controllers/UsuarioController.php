@@ -7,12 +7,21 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
+    public function login(){
+        return view("login");
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         //
+    }
+
+    public function home(Request $request)
+    {
+        dd('login completo');
     }
 
     /**
